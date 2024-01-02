@@ -11,11 +11,11 @@
 }
 *::selection {
   background: var(--main-color);
-  color: #fff;
+  color: #575757;
 }
 :root {
   --main-color: #fc0707;
-  --text-color: #ffea00;
+  --text-color: #ffc800;
   --bg-color: #fff;
 
   --big-font: 4rem;
@@ -34,7 +34,7 @@ body {
   background: var(--bg-color);
 }
 #darkmode {
-  font-size: 2vw;
+  font-size: 25px;
   cursor: pointer;
 }
 header {
@@ -185,9 +185,14 @@ width: 150px;
   border-radius: 0 0.5rem 0 0.5rem;
   padding: 5px 8px;
 }
+/* Shopping Cart */
 .box .bx:hover {
   background: #ffa400;
 }
+#shopping-cart{
+  display: none;
+}
+/* End of Shopping Cart */
 .servives-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, auto));
