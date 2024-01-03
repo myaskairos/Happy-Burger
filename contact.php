@@ -8,12 +8,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $to = "myamurrow@yahoo.com";
 
     // Set the subject of the email
-    $subject = "New Contact Form Submission";
+    $subject = "New Order Inquiry";
 
     // Build the email message
     $email_message = "Name: $name\n";
-    $email_message .= "Email: $email\n";
-    $email_message .= "Message:\n$message";
+    $email_message = "Email: $email\n";
+    $email_message = "Message:\n$message";
 
     // Use the mail() function to send the email
     mail($to, $subject, $email_message);
