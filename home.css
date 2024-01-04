@@ -263,6 +263,9 @@ width: 150px;
   padding: 20px;
   text-align: center;
 }
+#hidden{
+  display: none;
+}
 @media (max-width: 921px) {
   header {
     padding: 14px 41px;
