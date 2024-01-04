@@ -312,7 +312,7 @@ width: 150px;
 @media (max-width: 715px) {
   header {
     padding: 10px 16px;
-    height: 80px;
+    height: 90px;
   }
   .home {
     grid-template-columns: 1fr;
