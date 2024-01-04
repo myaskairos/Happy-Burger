@@ -36,7 +36,7 @@ sr.reveal(`.home-text, .home-img,
             .box, .s-box,
             .btn, .connect-text,
             .contact-box`, {
-    interval: 200
+    interval: 150
 })
 document.addEventListener("DOMContentLoaded", function () {
     var contactForm = document.getElementById("contactForm");
@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 alert("Form submitted successfully!");
             } else {
                 // Handle errors
-                alert("Error submitting form. Please try again later.");
+                alert("Error submitting request. Please call the restaurant");
             }
         };
         xhr.send(formData);

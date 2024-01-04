@@ -15,18 +15,18 @@
 </head>
 <body>
     <!-- Navbar -->
-    <header>
+    <header id="header">
       <a href="#" class="logo">
         <img src="images/happy-burger-logo.png">
       </a>
       <div class="bx bx-menu" id="menu-icon"></div>
 
-      <ul class="navbar">
+      <ul class="navbar" id="header">
           <button class="bx bx-sun" id="darkmode"></button>
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#menu">Menu</a></li>
-          <li><a href="#services">Service</a></li>
+          <li><a href="#services">History</a></li>
           <li><a href="#contact">Contact</a></li>
           <!-- Dark Mode -->
           
@@ -52,8 +52,10 @@
         <div class="about-text">
             <span>About Us</span>
             <h2> Welcome to <br> Happy Burger! </h2>
-            <p>This locally owned family restaurant has been serving El Paso for almost 20 years. </p>
-            <a href="#about" class="btn">Learn More</a>
+            <p>Welcome to Happy Burger, the ultimate destination for mouthwatering and authentic Mexican cuisine. Journeyed all the way from the vibrant streets of Chihuahua to the heart of El Paso our restaurant offers a vibrant and inviting atmosphere where guests can savor the rich flavors and vibrant culture of Mexico.</p>
+            <p>As a family-owned and operated restaurant, we bring you the authentic flavors and cherished recipes that have been passed down through generations, delivering a taste of true Mexican heritage.
+            </p>
+            <a href="#services" class="btn">Learn More</a>
         </div>
     </section>
 
@@ -100,34 +102,40 @@
     </div>
     <div class="heading">
         <span class="full-menu">Wanna See the Full <a href="/images/Happy Burger Menu.jpeg" class="full-menu">Menu</a>?</span>
+        <span>Call us <a href="#contact">here </a> your order!</span>
     </div>
     </section>
 
     <!-- Service -->
     <section class="services" id="services">
+        <div></div>
         <div class="heading">
-            <span>Services</span>
-            <h2>We provide best food services</h2>
+            <span>Our Past</span>
+            <h2>The History of Happy Burger</h2>
         </div>
 
         <div class="servives-container">
             <!-- Box 1 -->
             <div class="s-box">
-                <img src="https://images.pexels.com/photos/280453/pexels-photo-280453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500.png" alt="">
-                <h3>You Order</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit ea fugiat esse tempore ipsum temporibus.</p>
+                <img src="/images/Pic of Chihuahua umbrellas.jpeg" alt="Picture of Chihuahua">
+                <h3>From Chihuahua</h3>
+                <p>Originally hailing from Chihuahua, Mexico, our dedicated chefs meticulously recreate traditional dishes that celebrate the rich culinary traditions of our homeland. Every ingredient is carefully selected to ensure the highest quality and authenticity, capturing the essence of Mexican cuisine in each and every bite.
+                    From sizzling burgers to flavorful enchiladas, our menu is a testament to the time-honored recipes that have been cherished by our family for generations. Each dish is prepared with passion and attention to detail, showcasing the vibrant flavors and spices that make Mexican cuisine so beloved worldwide.
+                </p>
             </div>
             <!-- Box 2 -->
             <div class="s-box">
-                <img src="https://images.pexels.com/photos/4391470/pexels-photo-4391470.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500.png" alt="">
-                <h3>Shipping</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit ea fugiat esse tempore ipsum temporibus.</p>
+                <img src="/images/El Paso.jpeg" alt="Picture of El Paso">
+                <h3>To El Paso</h3>
+                <p>At Happy Burger, we take immense pride in sharing our family's heritage with the El Paso community for over 25 years. We are honored to bring the true flavors of Chihuahua to your table and invite you to join us in celebrating the rich tapestry of Mexican cuisine. Whether it's a casual lunch with loved ones or a special occasion, we are excited to welcome you into our family and serve you an authentic taste of Mexico. </p>
             </div>
             <!-- Box 3 -->
             <div class="s-box">
-                <img src="https://images.pexels.com/photos/4393426/pexels-photo-4393426.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500.png" alt="">
-                <h3>Delivered</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit ea fugiat esse tempore ipsum temporibus.</p>
+                <img src="" alt="" >
+                <h3>Quality</h3>
+                <p>Our talented team of skilled chefs ensures that every bite is a culinary delight, leaving you craving for more.
+                    At Happy Burger, we believe that food brings people together, and we strive to create a warm and welcoming environment.
+                    Come and experience the warmth, flavors, and traditions of Happy Burger. We can't wait to serve you!</p>
             </div>
         </div>
     </section>
@@ -138,9 +146,9 @@
             <span>Let's Talk</span>
             <h2>Connect now</h2>
         </div>
-        <a href="#contact" class="btn">Contact Us</a>
+        <a href="#contact" class="btn" id="hidden">Contact Us</a>
     </section>
-    <div>
+    <!-- Contact Form <div>
         <?php include 'contact.php';?>
         <form id="contactForm">
             <label for="name">Name:</label>
@@ -155,7 +163,7 @@
             <input type="submit" value="Submit">
         </form>
         
-    </div>
+    </div> End of Contact Form-->
 
     <!-- Contact -->
     <section class="contact" id="contact">
@@ -164,7 +172,7 @@
             <span>Connect With Us</span>
             <div class="social">
                 <a href="https://www.facebook.com/happyburgereptx/"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-twitter" id="hidden"></i></a>
                 <a href="https://www.instagram.com/happyburgereptx/"><i class="fa fa-instagram"></i></a>
             </div>
         </div>
@@ -176,7 +184,7 @@
             <li><a href="#services">Service</a></li>
             <li><a href="#contact">Contact</a></li>
         </div>
-        <div class="contact-box">
+        <div class="contact-box" id="hidden">
             <h3>Quick Links</h3>
             <li><a href="#Contact">Contact</a></li>
             <li><a href="#Privacy Policy">Privacy Policy</a></li>
@@ -187,18 +195,15 @@
             <h3>Contact</h3>
             <i class='bx bxs-map' ><span>3375 N. Yarbrough, El Paso, TX, United States, Texas</span></i>
             <i class='bx bxs-phone' ><span>+1 (915) 595-4243</span></i>
-            <i class='bx bxs-envelope' ><span>Example@email.com</span></i>
+            <i class='bx bxs-envelope' id="hidden"><span>Example@email.com</span></i>
         </div>
     </section>
 
     <!-- Copyright -->
     <div class="copyright">
-        <p>© Asslone4 All Right Reserved.</p>
+        <p>© All Rights Reserved.</p>
     </div>
 
 
-    <!-- Scroll Reveal -->
-    
-    <!-- Link To JavaScript -->
 </body>
 </html>

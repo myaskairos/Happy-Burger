@@ -189,6 +189,7 @@ width: 150px;
 .box .bx:hover {
   background: #ffa400;
 }
+
 #shopping-cart{
   display: none;
 }
@@ -203,13 +204,14 @@ width: 150px;
   text-align: center;
 }
 .s-box img {
-  width: 60px;
+  width: 200px;
+  Height: 200px;
 }
 .s-box h3 {
   margin: 4px 0 10px;
 }
 .connect {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: space-around;
 }
@@ -307,6 +309,7 @@ width: 150px;
 @media (max-width: 715px) {
   header {
     padding: 10px 16px;
+    height: 150px;
   }
   .home {
     grid-template-columns: 1fr;
@@ -318,6 +321,7 @@ width: 150px;
   .about-img {
     order: 2;
   }
+  
 }
 @media (max-width: 515px) {
   .connect {
@@ -326,10 +330,19 @@ width: 150px;
   .connect .btn {
     margin-top: 1rem;
   }
-  .navbar {
-    display: none;
+  .logo img{
+    height: 80px;
+    width: 80px;
+    }
+  .navbar a {
+      padding: 3px;
+      margin: 0;
+      display: flex;
+      background: var(--bg-color);
+    }
+    header {
+      height: 80px;
   }
-}
 @media (max-width: 450px) {
   :root {
     --big-font: 2rem;
@@ -338,7 +351,8 @@ width: 150px;
   .home-text {
     padding-top: 4rem;
   }
-  .navbar {
-    display: none;
+  #header {
+  display: none;
   }
+}
 }

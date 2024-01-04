@@ -1,4 +1,4 @@
-<?php
+// <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = $_POST["name"];
     $email = $_POST["email"];
@@ -26,4 +26,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     http_response_code(400);
     echo "Invalid request";
 }
-?>
+// ?> 
