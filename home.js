@@ -13,11 +13,11 @@ window.onscroll = () => {
 let darkmode = document.querySelector('#darkmode');
 
 darkmode.onclick = () => {
-    if(darkmode.classList.contains('bx-moon')){
-        darkmode.classList.replace('bx-moon','bx-sun');
+    if(darkmode.classList.contains('bx-sun')){
+        darkmode.classList.replace('bx-sun','bx-moon');
         document.body.classList.add('active');
     }else{
-        darkmode.classList.replace('bx-sun','bx-moon');
+        darkmode.classList.replace('bx-moon','bx-sun');
         document.body.classList.remove('active');
     }
 }
@@ -35,7 +35,7 @@ sr.reveal(`.home-text, .home-img,
             .about-img, .about-text,
             .box, .s-box,
             .btn, .connect-text,
-            .contact-box`, {
+            .contact-box,`, {
     interval: 150
 })
 document.addEventListener("DOMContentLoaded", function () {
