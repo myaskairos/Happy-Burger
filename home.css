@@ -312,7 +312,7 @@ width: 150px;
 @media (max-width: 715px) {
   header {
     padding: 10px 16px;
-    height: 150px;
+    height: 80px;
   }
   .home {
     grid-template-columns: 1fr;
@@ -334,9 +334,7 @@ width: 150px;
       display: flex;
       background: var(--bg-color);
     }
-    header {
-      height: 80px;
-  }
+    
 }
 @media (max-width: 515px) {
   .connect {
